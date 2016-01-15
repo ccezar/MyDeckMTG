@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B010D308B7910B6C7941D147 /* libPods-MyDeckMTG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7E5DADBDF1427083E59174 /* libPods-MyDeckMTG.a */; };
+		FCEAA6201C4877FE00047435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA61F1C4877FE00047435 /* AppDelegate.swift */; };
+		FCEAA6221C4877FE00047435 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA6211C4877FE00047435 /* ViewController.swift */; };
+		FCEAA6251C4877FE00047435 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCEAA6231C4877FE00047435 /* Main.storyboard */; };
+		FCEAA6281C4877FE00047435 /* MyDeckMTG.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA6261C4877FE00047435 /* MyDeckMTG.xcdatamodeld */; };
+		FCEAA62A1C4877FE00047435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCEAA6291C4877FE00047435 /* Assets.xcassets */; };
+		FCEAA62D1C4877FE00047435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCEAA62B1C4877FE00047435 /* LaunchScreen.storyboard */; };
+		FCEAA6381C4877FE00047435 /* MyDeckMTGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA6371C4877FE00047435 /* MyDeckMTGTests.swift */; };
+		FCEAA6431C4877FE00047435 /* MyDeckMTGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA6421C4877FE00047435 /* MyDeckMTGUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCEAA6341C4877FE00047435 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCEAA6141C4877FE00047435 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCEAA61B1C4877FE00047435;
+			remoteInfo = MyDeckMTG;
+		};
+		FCEAA63F1C4877FE00047435 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCEAA6141C4877FE00047435 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCEAA61B1C4877FE00047435;
+			remoteInfo = MyDeckMTG;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B88605E69066525760EF0936 /* Pods-MyDeckMTG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDeckMTG.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyDeckMTG/Pods-MyDeckMTG.release.xcconfig"; sourceTree = "<group>"; };
+		EE7E5DADBDF1427083E59174 /* libPods-MyDeckMTG.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyDeckMTG.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4E31E4BB7A3D2570A7EB217 /* Pods-MyDeckMTG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDeckMTG.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyDeckMTG/Pods-MyDeckMTG.debug.xcconfig"; sourceTree = "<group>"; };
+		FCEAA61C1C4877FE00047435 /* MyDeckMTG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDeckMTG.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCEAA61F1C4877FE00047435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FCEAA6211C4877FE00047435 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FCEAA6241C4877FE00047435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCEAA6271C4877FE00047435 /* MyDeckMTG.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDeckMTG.xcdatamodel; sourceTree = "<group>"; };
+		FCEAA6291C4877FE00047435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCEAA62C1C4877FE00047435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FCEAA62E1C4877FE00047435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCEAA6331C4877FE00047435 /* MyDeckMTGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyDeckMTGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCEAA6371C4877FE00047435 /* MyDeckMTGTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDeckMTGTests.swift; sourceTree = "<group>"; };
+		FCEAA6391C4877FE00047435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCEAA63E1C4877FE00047435 /* MyDeckMTGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyDeckMTGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCEAA6421C4877FE00047435 /* MyDeckMTGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDeckMTGUITests.swift; sourceTree = "<group>"; };
+		FCEAA6441C4877FE00047435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCEAA6191C4877FE00047435 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B010D308B7910B6C7941D147 /* libPods-MyDeckMTG.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCEAA6301C4877FE00047435 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCEAA63B1C4877FE00047435 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31EB979E080E55345F14CD1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4E31E4BB7A3D2570A7EB217 /* Pods-MyDeckMTG.debug.xcconfig */,
+				B88605E69066525760EF0936 /* Pods-MyDeckMTG.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CA0DE154393C98407DF7A782 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE7E5DADBDF1427083E59174 /* libPods-MyDeckMTG.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCEAA6131C4877FE00047435 = {
+			isa = PBXGroup;
+			children = (
+				FCEAA61E1C4877FE00047435 /* MyDeckMTG */,
+				FCEAA6361C4877FE00047435 /* MyDeckMTGTests */,
+				FCEAA6411C4877FE00047435 /* MyDeckMTGUITests */,
+				FCEAA61D1C4877FE00047435 /* Products */,
+				31EB979E080E55345F14CD1E /* Pods */,
+				CA0DE154393C98407DF7A782 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FCEAA61D1C4877FE00047435 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCEAA61C1C4877FE00047435 /* MyDeckMTG.app */,
+				FCEAA6331C4877FE00047435 /* MyDeckMTGTests.xctest */,
+				FCEAA63E1C4877FE00047435 /* MyDeckMTGUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCEAA61E1C4877FE00047435 /* MyDeckMTG */ = {
+			isa = PBXGroup;
+			children = (
+				FCEAA61F1C4877FE00047435 /* AppDelegate.swift */,
+				FCEAA6211C4877FE00047435 /* ViewController.swift */,
+				FCEAA6231C4877FE00047435 /* Main.storyboard */,
+				FCEAA6291C4877FE00047435 /* Assets.xcassets */,
+				FCEAA62B1C4877FE00047435 /* LaunchScreen.storyboard */,
+				FCEAA62E1C4877FE00047435 /* Info.plist */,
+				FCEAA6261C4877FE00047435 /* MyDeckMTG.xcdatamodeld */,
+			);
+			path = MyDeckMTG;
+			sourceTree = "<group>";
+		};
+		FCEAA6361C4877FE00047435 /* MyDeckMTGTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCEAA6371C4877FE00047435 /* MyDeckMTGTests.swift */,
+				FCEAA6391C4877FE00047435 /* Info.plist */,
+			);
+			path = MyDeckMTGTests;
+			sourceTree = "<group>";
+		};
+		FCEAA6411C4877FE00047435 /* MyDeckMTGUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FCEAA6421C4877FE00047435 /* MyDeckMTGUITests.swift */,
+				FCEAA6441C4877FE00047435 /* Info.plist */,
+			);
+			path = MyDeckMTGUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCEAA61B1C4877FE00047435 /* MyDeckMTG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCEAA6471C4877FE00047435 /* Build configuration list for PBXNativeTarget "MyDeckMTG" */;
+			buildPhases = (
+				3B554CF819AB754D6EE2D8F4 /* Check Pods Manifest.lock */,
+				FCEAA6181C4877FE00047435 /* Sources */,
+				FCEAA6191C4877FE00047435 /* Frameworks */,
+				FCEAA61A1C4877FE00047435 /* Resources */,
+				469FF8068122F20481783DDB /* Embed Pods Frameworks */,
+				038C9AB35847227CD30CF3AC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyDeckMTG;
+			productName = MyDeckMTG;
+			productReference = FCEAA61C1C4877FE00047435 /* MyDeckMTG.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCEAA6321C4877FE00047435 /* MyDeckMTGTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCEAA64A1C4877FE00047435 /* Build configuration list for PBXNativeTarget "MyDeckMTGTests" */;
+			buildPhases = (
+				FCEAA62F1C4877FE00047435 /* Sources */,
+				FCEAA6301C4877FE00047435 /* Frameworks */,
+				FCEAA6311C4877FE00047435 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCEAA6351C4877FE00047435 /* PBXTargetDependency */,
+			);
+			name = MyDeckMTGTests;
+			productName = MyDeckMTGTests;
+			productReference = FCEAA6331C4877FE00047435 /* MyDeckMTGTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FCEAA63D1C4877FE00047435 /* MyDeckMTGUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCEAA64D1C4877FE00047435 /* Build configuration list for PBXNativeTarget "MyDeckMTGUITests" */;
+			buildPhases = (
+				FCEAA63A1C4877FE00047435 /* Sources */,
+				FCEAA63B1C4877FE00047435 /* Frameworks */,
+				FCEAA63C1C4877FE00047435 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCEAA6401C4877FE00047435 /* PBXTargetDependency */,
+			);
+			name = MyDeckMTGUITests;
+			productName = MyDeckMTGUITests;
+			productReference = FCEAA63E1C4877FE00047435 /* MyDeckMTGUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCEAA6141C4877FE00047435 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "MyDeck MTG";
+				TargetAttributes = {
+					FCEAA61B1C4877FE00047435 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					FCEAA6321C4877FE00047435 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = FCEAA61B1C4877FE00047435;
+					};
+					FCEAA63D1C4877FE00047435 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = FCEAA61B1C4877FE00047435;
+					};
+				};
+			};
+			buildConfigurationList = FCEAA6171C4877FE00047435 /* Build configuration list for PBXProject "MyDeckMTG" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCEAA6131C4877FE00047435;
+			productRefGroup = FCEAA61D1C4877FE00047435 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCEAA61B1C4877FE00047435 /* MyDeckMTG */,
+				FCEAA6321C4877FE00047435 /* MyDeckMTGTests */,
+				FCEAA63D1C4877FE00047435 /* MyDeckMTGUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCEAA61A1C4877FE00047435 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCEAA62D1C4877FE00047435 /* LaunchScreen.storyboard in Resources */,
+				FCEAA62A1C4877FE00047435 /* Assets.xcassets in Resources */,
+				FCEAA6251C4877FE00047435 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCEAA6311C4877FE00047435 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCEAA63C1C4877FE00047435 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		038C9AB35847227CD30CF3AC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyDeckMTG/Pods-MyDeckMTG-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B554CF819AB754D6EE2D8F4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		469FF8068122F20481783DDB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyDeckMTG/Pods-MyDeckMTG-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCEAA6181C4877FE00047435 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCEAA6221C4877FE00047435 /* ViewController.swift in Sources */,
+				FCEAA6281C4877FE00047435 /* MyDeckMTG.xcdatamodeld in Sources */,
+				FCEAA6201C4877FE00047435 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCEAA62F1C4877FE00047435 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCEAA6381C4877FE00047435 /* MyDeckMTGTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCEAA63A1C4877FE00047435 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCEAA6431C4877FE00047435 /* MyDeckMTGUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCEAA6351C4877FE00047435 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCEAA61B1C4877FE00047435 /* MyDeckMTG */;
+			targetProxy = FCEAA6341C4877FE00047435 /* PBXContainerItemProxy */;
+		};
+		FCEAA6401C4877FE00047435 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCEAA61B1C4877FE00047435 /* MyDeckMTG */;
+			targetProxy = FCEAA63F1C4877FE00047435 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FCEAA6231C4877FE00047435 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCEAA6241C4877FE00047435 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FCEAA62B1C4877FE00047435 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCEAA62C1C4877FE00047435 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCEAA6451C4877FE00047435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCEAA6461C4877FE00047435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCEAA6481C4877FE00047435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4E31E4BB7A3D2570A7EB217 /* Pods-MyDeckMTG.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyDeckMTG/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.MyDeckMTG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FCEAA6491C4877FE00047435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B88605E69066525760EF0936 /* Pods-MyDeckMTG.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyDeckMTG/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.MyDeckMTG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FCEAA64B1C4877FE00047435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MyDeckMTGTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.MyDeckMTGTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyDeckMTG.app/MyDeckMTG";
+			};
+			name = Debug;
+		};
+		FCEAA64C1C4877FE00047435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MyDeckMTGTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.MyDeckMTGTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyDeckMTG.app/MyDeckMTG";
+			};
+			name = Release;
+		};
+		FCEAA64E1C4877FE00047435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyDeckMTGUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.MyDeckMTGUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyDeckMTG;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FCEAA64F1C4877FE00047435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyDeckMTGUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.MyDeckMTGUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyDeckMTG;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCEAA6171C4877FE00047435 /* Build configuration list for PBXProject "MyDeckMTG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCEAA6451C4877FE00047435 /* Debug */,
+				FCEAA6461C4877FE00047435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCEAA6471C4877FE00047435 /* Build configuration list for PBXNativeTarget "MyDeckMTG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCEAA6481C4877FE00047435 /* Debug */,
+				FCEAA6491C4877FE00047435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCEAA64A1C4877FE00047435 /* Build configuration list for PBXNativeTarget "MyDeckMTGTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCEAA64B1C4877FE00047435 /* Debug */,
+				FCEAA64C1C4877FE00047435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCEAA64D1C4877FE00047435 /* Build configuration list for PBXNativeTarget "MyDeckMTGUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCEAA64E1C4877FE00047435 /* Debug */,
+				FCEAA64F1C4877FE00047435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FCEAA6261C4877FE00047435 /* MyDeckMTG.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FCEAA6271C4877FE00047435 /* MyDeckMTG.xcdatamodel */,
+			);
+			currentVersion = FCEAA6271C4877FE00047435 /* MyDeckMTG.xcdatamodel */;
+			path = MyDeckMTG.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FCEAA6141C4877FE00047435 /* Project object */;
+}
