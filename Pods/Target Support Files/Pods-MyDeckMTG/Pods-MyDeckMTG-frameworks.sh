@@ -82,3 +82,16 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-MyDeckMTG/Bolts.framework"
+  install_framework "Pods-MyDeckMTG/Parse.framework"
+  install_framework "Pods-MyDeckMTG/Realm.framework"
+  install_framework "Pods-MyDeckMTG/RealmSwift.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-MyDeckMTG/Bolts.framework"
+  install_framework "Pods-MyDeckMTG/Parse.framework"
+  install_framework "Pods-MyDeckMTG/Realm.framework"
+  install_framework "Pods-MyDeckMTG/RealmSwift.framework"
+fi

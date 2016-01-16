@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B010D308B7910B6C7941D147 /* libPods-MyDeckMTG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7E5DADBDF1427083E59174 /* libPods-MyDeckMTG.a */; };
+		9D2A6F2A29E11532880C7CD3 /* Pods_MyDeckMTG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA4E7647DD74E92E1DD3C45 /* Pods_MyDeckMTG.framework */; };
 		FCEAA6201C4877FE00047435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA61F1C4877FE00047435 /* AppDelegate.swift */; };
-		FCEAA6221C4877FE00047435 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA6211C4877FE00047435 /* ViewController.swift */; };
 		FCEAA6251C4877FE00047435 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCEAA6231C4877FE00047435 /* Main.storyboard */; };
-		FCEAA6281C4877FE00047435 /* MyDeckMTG.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA6261C4877FE00047435 /* MyDeckMTG.xcdatamodeld */; };
 		FCEAA62A1C4877FE00047435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCEAA6291C4877FE00047435 /* Assets.xcassets */; };
 		FCEAA62D1C4877FE00047435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCEAA62B1C4877FE00047435 /* LaunchScreen.storyboard */; };
 		FCEAA6381C4877FE00047435 /* MyDeckMTGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA6371C4877FE00047435 /* MyDeckMTGTests.swift */; };
 		FCEAA6431C4877FE00047435 /* MyDeckMTGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA6421C4877FE00047435 /* MyDeckMTGUITests.swift */; };
+		FCEAA6511C49BC1500047435 /* SetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA6501C49BC1500047435 /* SetsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +36,11 @@
 
 /* Begin PBXFileReference section */
 		B88605E69066525760EF0936 /* Pods-MyDeckMTG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDeckMTG.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyDeckMTG/Pods-MyDeckMTG.release.xcconfig"; sourceTree = "<group>"; };
-		EE7E5DADBDF1427083E59174 /* libPods-MyDeckMTG.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyDeckMTG.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFA4E7647DD74E92E1DD3C45 /* Pods_MyDeckMTG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDeckMTG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E31E4BB7A3D2570A7EB217 /* Pods-MyDeckMTG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDeckMTG.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyDeckMTG/Pods-MyDeckMTG.debug.xcconfig"; sourceTree = "<group>"; };
 		FCEAA61C1C4877FE00047435 /* MyDeckMTG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDeckMTG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCEAA61F1C4877FE00047435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FCEAA6211C4877FE00047435 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FCEAA6241C4877FE00047435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FCEAA6271C4877FE00047435 /* MyDeckMTG.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDeckMTG.xcdatamodel; sourceTree = "<group>"; };
 		FCEAA6291C4877FE00047435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCEAA62C1C4877FE00047435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCEAA62E1C4877FE00047435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +50,7 @@
 		FCEAA63E1C4877FE00047435 /* MyDeckMTGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyDeckMTGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCEAA6421C4877FE00047435 /* MyDeckMTGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDeckMTGUITests.swift; sourceTree = "<group>"; };
 		FCEAA6441C4877FE00047435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCEAA6501C49BC1500047435 /* SetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B010D308B7910B6C7941D147 /* libPods-MyDeckMTG.a in Frameworks */,
+				9D2A6F2A29E11532880C7CD3 /* Pods_MyDeckMTG.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +91,7 @@
 		CA0DE154393C98407DF7A782 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EE7E5DADBDF1427083E59174 /* libPods-MyDeckMTG.a */,
+				DFA4E7647DD74E92E1DD3C45 /* Pods_MyDeckMTG.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -124,12 +122,11 @@
 			isa = PBXGroup;
 			children = (
 				FCEAA61F1C4877FE00047435 /* AppDelegate.swift */,
-				FCEAA6211C4877FE00047435 /* ViewController.swift */,
 				FCEAA6231C4877FE00047435 /* Main.storyboard */,
 				FCEAA6291C4877FE00047435 /* Assets.xcassets */,
 				FCEAA62B1C4877FE00047435 /* LaunchScreen.storyboard */,
 				FCEAA62E1C4877FE00047435 /* Info.plist */,
-				FCEAA6261C4877FE00047435 /* MyDeckMTG.xcdatamodeld */,
+				FCEAA6501C49BC1500047435 /* SetsViewController.swift */,
 			);
 			path = MyDeckMTG;
 			sourceTree = "<group>";
@@ -334,8 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCEAA6221C4877FE00047435 /* ViewController.swift in Sources */,
-				FCEAA6281C4877FE00047435 /* MyDeckMTG.xcdatamodeld in Sources */,
+				FCEAA6511C49BC1500047435 /* SetsViewController.swift in Sources */,
 				FCEAA6201C4877FE00047435 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -586,19 +582,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		FCEAA6261C4877FE00047435 /* MyDeckMTG.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				FCEAA6271C4877FE00047435 /* MyDeckMTG.xcdatamodel */,
-			);
-			currentVersion = FCEAA6271C4877FE00047435 /* MyDeckMTG.xcdatamodel */;
-			path = MyDeckMTG.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = FCEAA6141C4877FE00047435 /* Project object */;
 }
