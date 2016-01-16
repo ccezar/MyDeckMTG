@@ -7,15 +7,26 @@
 //
 
 import UIKit
+import Parse
+import Bolts
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        PFSet.registerSubclass()
+        
+        Parse.enableLocalDatastore()
+        Parse.setApplicationId("dapK6bgNNzIS3PfLMgxGt5L9cQqWjOvniRv4IawT", clientKey: "qYa4rrP2SxF73kRwtRpU1PtketuZmLIn3bgnAyK0")
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
+        if setsIsUpToDate() == false {
+            updateLocalSets()
+        }
+        
         return true
     }
 
@@ -41,6 +52,45 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
 
+    }
+    
+    func setsIsUpToDate() -> Bool {
+        let error: NSErrorPointer = nil
+        let quantitySetsInParse = PFSet.query()!.countObjects(error)
+        
+        if error == nil {
+            let realm = try! Realm()
+            
+            let quantitySetsInRealm = realm.objects(Set).count
+            
+            if quantitySetsInParse == quantitySetsInRealm {
+                return true
+            } else {
+                let setsInRealm = realm.objects(Set)
+                
+                for set in setsInRealm {
+                    try! realm.write {
+                        realm.delete(set)
+                    }
+                }
+            }
+        }
+        return false
+    }
+    
+    func updateLocalSets() {
+        do {
+            let query = PFSet.query()!
+            query.limit = 1000
+            
+            if let sets = try query.findObjects() as? [PFSet] {
+                for set in sets {
+                    set.saveInRealm()
+                }
+            }
+        } catch {
+            print(error)
+        }
     }
 }
 

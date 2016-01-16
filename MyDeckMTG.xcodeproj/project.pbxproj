@@ -15,6 +15,11 @@
 		FCEAA6381C4877FE00047435 /* MyDeckMTGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA6371C4877FE00047435 /* MyDeckMTGTests.swift */; };
 		FCEAA6431C4877FE00047435 /* MyDeckMTGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA6421C4877FE00047435 /* MyDeckMTGUITests.swift */; };
 		FCEAA6511C49BC1500047435 /* SetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA6501C49BC1500047435 /* SetsViewController.swift */; };
+		FCED60391C4AC0A30075BF18 /* PFSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCED60381C4AC0A30075BF18 /* PFSet.swift */; };
+		FCED60411C4AC30F0075BF18 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCED60401C4AC30F0075BF18 /* Set.swift */; };
+		FCED60451C4ACA6D0075BF18 /* SetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCED60441C4ACA6D0075BF18 /* SetCell.swift */; };
+		FCED60481C4AE8630075BF18 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCED60471C4AE8630075BF18 /* UIImageView.swift */; };
+		FCED604A1C4AF3B60075BF18 /* SetIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCED60491C4AF3B60075BF18 /* SetIcon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,12 @@
 		FCEAA6421C4877FE00047435 /* MyDeckMTGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDeckMTGUITests.swift; sourceTree = "<group>"; };
 		FCEAA6441C4877FE00047435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCEAA6501C49BC1500047435 /* SetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetsViewController.swift; sourceTree = "<group>"; };
+		FCED60381C4AC0A30075BF18 /* PFSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PFSet.swift; path = Models/Parse/PFSet.swift; sourceTree = "<group>"; };
+		FCED603A1C4AC1180075BF18 /* MyDeckMTG-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyDeckMTG-Bridging-Header.h"; sourceTree = "<group>"; };
+		FCED60401C4AC30F0075BF18 /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
+		FCED60441C4ACA6D0075BF18 /* SetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetCell.swift; path = Components/Cells/SetCell.swift; sourceTree = "<group>"; };
+		FCED60471C4AE8630075BF18 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageView.swift; path = Components/Extensions/UIImageView.swift; sourceTree = "<group>"; };
+		FCED60491C4AF3B60075BF18 /* SetIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetIcon.swift; path = Models/Realm/SetIcon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,12 +132,15 @@
 		FCEAA61E1C4877FE00047435 /* MyDeckMTG */ = {
 			isa = PBXGroup;
 			children = (
+				FCED60421C4ACA240075BF18 /* Components */,
+				FCED60361C4AC05E0075BF18 /* Models */,
 				FCEAA61F1C4877FE00047435 /* AppDelegate.swift */,
 				FCEAA6231C4877FE00047435 /* Main.storyboard */,
 				FCEAA6291C4877FE00047435 /* Assets.xcassets */,
 				FCEAA62B1C4877FE00047435 /* LaunchScreen.storyboard */,
 				FCEAA62E1C4877FE00047435 /* Info.plist */,
 				FCEAA6501C49BC1500047435 /* SetsViewController.swift */,
+				FCED603A1C4AC1180075BF18 /* MyDeckMTG-Bridging-Header.h */,
 			);
 			path = MyDeckMTG;
 			sourceTree = "<group>";
@@ -147,6 +161,57 @@
 				FCEAA6441C4877FE00047435 /* Info.plist */,
 			);
 			path = MyDeckMTGUITests;
+			sourceTree = "<group>";
+		};
+		FCED60361C4AC05E0075BF18 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FCED603D1C4AC2E40075BF18 /* Realm */,
+				FCED60371C4AC06D0075BF18 /* Parse */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FCED60371C4AC06D0075BF18 /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				FCED60381C4AC0A30075BF18 /* PFSet.swift */,
+			);
+			name = Parse;
+			sourceTree = "<group>";
+		};
+		FCED603D1C4AC2E40075BF18 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				FCED60401C4AC30F0075BF18 /* Set.swift */,
+				FCED60491C4AF3B60075BF18 /* SetIcon.swift */,
+			);
+			name = Realm;
+			sourceTree = "<group>";
+		};
+		FCED60421C4ACA240075BF18 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FCED60461C4AE8450075BF18 /* Extensions */,
+				FCED60431C4ACA340075BF18 /* Cells */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		FCED60431C4ACA340075BF18 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FCED60441C4ACA6D0075BF18 /* SetCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		FCED60461C4AE8450075BF18 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FCED60471C4AE8630075BF18 /* UIImageView.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,8 +396,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCED60451C4ACA6D0075BF18 /* SetCell.swift in Sources */,
+				FCED604A1C4AF3B60075BF18 /* SetIcon.swift in Sources */,
+				FCED60411C4AC30F0075BF18 /* Set.swift in Sources */,
 				FCEAA6511C49BC1500047435 /* SetsViewController.swift in Sources */,
 				FCEAA6201C4877FE00047435 /* AppDelegate.swift in Sources */,
+				FCED60481C4AE8630075BF18 /* UIImageView.swift in Sources */,
+				FCED60391C4AC0A30075BF18 /* PFSet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,10 +545,13 @@
 			baseConfigurationReference = F4E31E4BB7A3D2570A7EB217 /* Pods-MyDeckMTG.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MyDeckMTG/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.MyDeckMTG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyDeckMTG/MyDeckMTG-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -487,10 +560,12 @@
 			baseConfigurationReference = B88605E69066525760EF0936 /* Pods-MyDeckMTG.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MyDeckMTG/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.MyDeckMTG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyDeckMTG/MyDeckMTG-Bridging-Header.h";
 			};
 			name = Release;
 		};

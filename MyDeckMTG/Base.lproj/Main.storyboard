@@ -22,18 +22,56 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="572"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Unw-bS-jfN">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="setCell" id="Unw-bS-jfN" customClass="SetCell" customModule="MyDeckMTG" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Unw-bS-jfN" id="2s5-ha-jiu">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="M15_symbol" translatesAutoresizingMaskIntoConstraints="NO" id="pjF-fq-CYe">
+                                                    <rect key="frame" x="8" y="7" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="dR5-Tt-vNU"/>
+                                                        <constraint firstAttribute="height" constant="30" id="gwf-gO-PTa"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 Cards" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PjU-A5-V4q">
+                                                    <rect key="frame" x="367" y="32" width="200" height="11"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="200" id="284-pH-5y2"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="9"/>
+                                                    <color key="textColor" red="0.96862745100000003" green="0.0" blue="0.026933290830000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Battle for Zendikar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOL-Nm-hdt">
+                                                    <rect key="frame" x="46" y="14" width="521" height="15"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="FOL-Nm-hdt" firstAttribute="centerY" secondItem="2s5-ha-jiu" secondAttribute="centerY" id="4KK-hg-TRN"/>
+                                                <constraint firstItem="pjF-fq-CYe" firstAttribute="centerY" secondItem="2s5-ha-jiu" secondAttribute="centerY" id="IBW-hd-UZh"/>
+                                                <constraint firstItem="PjU-A5-V4q" firstAttribute="trailing" secondItem="2s5-ha-jiu" secondAttribute="trailingMargin" constant="8" id="JPZ-9I-ViC"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="FOL-Nm-hdt" secondAttribute="trailing" constant="-8" id="JZx-jF-Ytw"/>
+                                                <constraint firstItem="pjF-fq-CYe" firstAttribute="leading" secondItem="2s5-ha-jiu" secondAttribute="leadingMargin" id="LuK-1x-qSA"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="PjU-A5-V4q" secondAttribute="bottom" constant="-8" id="fzX-Yc-r5S"/>
+                                                <constraint firstItem="FOL-Nm-hdt" firstAttribute="leading" secondItem="pjF-fq-CYe" secondAttribute="trailing" constant="8" id="rli-tE-Vsk"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="iconImageView" destination="pjF-fq-CYe" id="JvU-PH-5iE"/>
+                                            <outlet property="nameLabel" destination="FOL-Nm-hdt" id="fJy-1h-gWv"/>
+                                            <outlet property="quantityCardsLabel" destination="PjU-A5-V4q" id="bIs-WS-txX"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="QD4-OU-Ked"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="jzX-Br-mqB"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="LkM-OQ-jdd"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Hdr-S2-RlF"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -54,4 +92,7 @@
             <point key="canvasLocation" x="375" y="337"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="M15_symbol" width="250" height="134"/>
+    </resources>
 </document>
